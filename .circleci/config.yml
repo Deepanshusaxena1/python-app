@@ -9,7 +9,9 @@ jobs:
     steps:
       - checkout
       - python/install-deps
-      
+      - run
+        name: Run Service File
+        command: python service.py
 
 workflows:
   main:
